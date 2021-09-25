@@ -8,12 +8,12 @@ const assert = require('assert');
 describe('Mathematical Operations - Test Suite', function(){
 
     //1. Addition
-    it('Addition of two variables', function(){
+    it.skip('Addition of two variables', function(){
         
         let a = 10;
         let b = 10;
         let c = a + b;
-        assert(c, 20);
+        assert.equal(c, 20);
 
     });
 
@@ -23,7 +23,7 @@ describe('Mathematical Operations - Test Suite', function(){
         let a = 10;
         let b = 10;
         let c = a - b;
-        assert(c, 0);
+        assert.equal(c, 0);
 
     });
 
@@ -33,7 +33,7 @@ describe('Mathematical Operations - Test Suite', function(){
         let a = 10;
         let b = 10;
         let c = a * b;
-        assert(c, 100);
+        assert.equal(c, 100);
 
     });
 
@@ -43,7 +43,9 @@ describe('Mathematical Operations - Test Suite', function(){
         let a = 10;
         let b = 10;
         let c = a / b;
-        assert(c, 1);
+        assert.equal(c, 1);
 
     });
+
+    it('Example Pending Test');
 });
